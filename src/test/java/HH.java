@@ -13,4 +13,10 @@ public class HH {
             System.out.println(name);
         }
     }
+
+    @Test
+    public void single() {
+        Object bean = context.getBean("&factoryBean");
+        System.out.println(bean.getClass());
+    }
 }
